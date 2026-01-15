@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.jeuxcartes.blackjack.controller.GameController"
+            stylesheets="@style.css"
+            styleClass="root-panel">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+            <padding><Insets top="20" bottom="20"/></padding>
+            <Label text="Croupier" styleClass="title-text"/>
+            <HBox fx:id="dealerCardsBox" alignment="CENTER" spacing="10"/>
+            <Label fx:id="dealerScoreLabel" text="Score: ?" styleClass="score-text"/>
+        </VBox>
+    </top>
+
+    <center>
+        <Label fx:id="messageLabel" text="Bienvenue au Blackjack" styleClass="message-text"/>
+    </center>
+
+   <bottom>
+    <VBox alignment="CENTER" spacing="15">
+        <padding><Insets top="20" bottom="20"/></padding>
+        
+        <Label fx:id="playerScoreLabel" text="Score: 0" styleClass="score-text"/>
+        <HBox fx:id="playerCardsBox" alignment="CENTER" spacing="10"/>
+        
+        <HBox alignment="CENTER" spacing="20">
+            <Button fx:id="btnHit" text="TIRER" onAction="#onHit" styleClass="btn-action"/>
+            <Button fx:id="btnStand" text="RESTER" onAction="#onStand" styleClass="btn-action"/>
+            <Button fx:id="btnRestart" text="REJOUER" onAction="#onRestart" visible="false"/>
+        </HBox>
+    </VBox>
+</bottom>
+</BorderPane>
