@@ -37,7 +37,7 @@ fondamentaux de la programmation orientée objet (POO).
 
 ---
 
-## 📂 Structure du projet
+##  Structure du projet
 projet-java-cartes/
 │── src/
 │ ├── model/
@@ -49,12 +49,12 @@ projet-java-cartes/
 
 ---
 
-## ▶Exécution du projet
+## Exécution du projet
 1. Ouvrir le projet dans un IDE (IntelliJ IDEA, Eclipse ou NetBeans)
 2. Compiler et exécuter la classe principale (`Launcher.java`)
 
 ---
 
-## 📎 Conclusion
+##  Conclusion
 Ce projet nous a permis de renforcer nos compétences en Java,
 notamment en programmation orientée objet et en travail collaboratif.
